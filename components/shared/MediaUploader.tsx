@@ -53,7 +53,7 @@ const MediaUploader = ({
 
   return (
     <CldUploadWidget
-      uploadPreset="jsm_imaginify"
+      uploadPreset="dms_evvie"
       options={{
         multiple: false,
         resourceType: "image",
