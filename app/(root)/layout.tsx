@@ -1,13 +1,18 @@
+"use client"
+
 import MobileNav from '@/components/shared/MobileNav'
 import Sidebar from '@/components/shared/Sidebar'
 import { Toaster } from '@/components/ui/toaster'
+import { useUser } from '@clerk/clerk-react';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
+  const { isSignedIn } = useUser();
   return (
     <main className="root">
-      <Sidebar />
+      {isSignedIn && 
+      <Sidebar />}
       <MobileNav />
-
+      
       <div className="root-container">
         <div className="wrapper">
           {children}

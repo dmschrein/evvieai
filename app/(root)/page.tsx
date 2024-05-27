@@ -1,8 +1,14 @@
+
 import { Collection } from "@/components/shared/Collection"
 import { navLinks } from "@/constants"
 import { getAllImages } from "@/lib/actions/image.actions"
 import Image from "next/image"
 import Link from "next/link"
+import { useUser } from '@clerk/clerk-react'
+import NavBar from "@/components/landingpage/NavBar"
+import Hero from "@/components/landingpage/Hero"
+import Slider from "@/components/landingpage/Slider"
+import Services from "@/components/landingpage/Services"
 
 const Home = async ({ searchParams }: SearchParamProps) => {
   const page = Number(searchParams?.page) || 1;
