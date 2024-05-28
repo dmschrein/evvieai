@@ -5,10 +5,10 @@ import { getAllImages } from "@/lib/actions/image.actions"
 import Image from "next/image"
 import Link from "next/link"
 import { useUser } from '@clerk/clerk-react'
-import NavBar from "@/components/landingpage/NavBar"
 import Hero from "@/components/landingpage/Hero"
 import Slider from "@/components/landingpage/Slider"
 import Services from "@/components/landingpage/Services"
+import Navbar from "@/components/landingpage/NavBar"
 
 const Home = async ({ searchParams }: SearchParamProps) => {
   const page = Number(searchParams?.page) || 1;
@@ -17,7 +17,9 @@ const Home = async ({ searchParams }: SearchParamProps) => {
   const images = await getAllImages({ page, searchQuery})
 
   return (
+    
     <>
+    <Navbar/>
       <section className="home">
         <h1 className="home-heading">
           Unleash Your Creative Vision with Evvie.ai
