@@ -1,7 +1,7 @@
 import { NAV_LINKS } from "@/constants"
 import Image from "next/image"
 import Link from "next/link"
-import Button from '@/components/home/Button'
+import Button from "@/components/home/Button"
 import EvvieLogo from "@/app/ui/evvie-logo"
 
 const Navbar = () => {
@@ -23,13 +23,13 @@ const Navbar = () => {
         <Button 
           type="button"
           title="Login"
-          icon="/user.svg"
+          icon="/assets/images/user.svg"
           variant="btn_dark_green"
         />
       </div>
 
       <Image 
-        src="menu.svg"
+        src="/assets/images/menu.svg"
         alt="menu"
         width={32}
         height={32}

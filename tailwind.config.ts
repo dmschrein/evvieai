@@ -93,11 +93,11 @@ module.exports = {
       backgroundImage: {
         "purple-gradient": "url('/assets/images/gradient-bg.svg')",
         banner: "url('/assets/images/banner-bg.png')",
-        'bg-img-1': "url('/img-1.png')",
-        'bg-img-2': "url('/img-2.png')",
-        'feature-bg': "url('/feature-bg.png')",
-        pattern: "url('/pattern.png')",
-        'pattern-2': "url('/pattern-bg.png')",
+        'bg-img-1': "url('/assets/images/img-1.png')",
+        'bg-img-2': "url('/assets/images/img-2.png')",
+        'feature-bg': "url('/assets/images/feature-bg.png')",
+        pattern: "url('/assets/images/pattern.png')",
+        'pattern-2': "url('/assets/images/pattern-bg.png')",
       },
       borderRadius: {
         lg: "var(--radius)",

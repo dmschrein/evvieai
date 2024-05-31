@@ -4,15 +4,16 @@ import { lusitana } from '@/app/ui/fonts';
 export default function EvvieLogo() {
   return (
     <div
-      className={`${lusitana.className} flex flex-row items-center leading-none text-white`}
+      className={`${lusitana.className} flex flex-row items-center leading-none text-black
+      `}
     >
       <Image
           src="/assets/images/evvie.ai-logo.svg"
           alt="logo"
-          width={180}
+          width={80}
           height={28}
         />
-      <p className="text-[44px]">Acme</p>
+      <p className="text-[34px]">Evvie AI</p>
     </div>
   );
 }
