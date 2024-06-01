@@ -10,10 +10,10 @@ export default function EvvieLogo() {
       <Image
           src="/assets/images/evvie.ai-logo.svg"
           alt="logo"
-          width={80}
+          width={50}
           height={28}
         />
-      <p className="text-[34px]">Evvie AI</p>
+      <p className="px-3 text-[34px]">Evvie AI</p>
     </div>
   );
 }
