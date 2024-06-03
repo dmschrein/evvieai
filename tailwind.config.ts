@@ -93,8 +93,10 @@ module.exports = {
       backgroundImage: {
         "purple-gradient": "url('/assets/images/gradient-bg.svg')",
         banner: "url('/assets/images/banner-bg.png')",
-        'bg-img-1': "url('/assets/images/img-1.png')",
-        'bg-img-2': "url('/assets/images/img-2.png')",
+        'bg-img-1': "url('/assets/images/slider2.png')",
+        'bg-img-2': "url('/assets/images/slider1.png')",
+        'bg-img-3': "url('/assets/images/slider5.png')",
+        'bg-img-4': "url('/assets/images/slider6.png')",
         'feature-bg': "url('/assets/images/feature-bg.png')",
         pattern: "url('/assets/images/pattern.png')",
         'pattern-2': "url('/assets/images/pattern-bg.png')",

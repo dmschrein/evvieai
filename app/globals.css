@@ -162,6 +162,10 @@
     @apply text-[36px] font-semibold sm:text-[44px] leading-[120%] sm:leading-[56px];
   }
 
+  .h1-bold {
+    @apply text-center font-bold text-[72px] sm:text-[128px] leading-[110%] sm:leading-[120%];
+  }  
+
   /* 36 */
   .h2-bold {
     @apply text-[30px] font-bold md:text-[36px] leading-[110%];
@@ -273,7 +277,7 @@
   }
 
   .home-heading {
-    @apply h1-semibold max-w-[500px] flex-wrap text-center text-white shadow-sm;
+    @apply h1-semibold max-w-[500px] flex-wrap text-center text-black shadow-sm;
   }
 
   /* Credits Page */
