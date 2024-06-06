@@ -559,3 +559,7 @@
   font-weight: 600;
   color: #384262;
 }
+
+.fill-neutral-content {
+  fill: var(--fallback-nc,oklch(var(--nc)/1));
+}

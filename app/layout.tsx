@@ -1,5 +1,7 @@
 // RootLayout or _app.tsx
 import './globals.css';
+import './css/style.css';
+
 import { Inter } from 'next/font/google';
 import Header from '@/components/ui/header';
 import Footer from '@/components/ui/footer'; // Import the Footer component
