@@ -1,33 +1,34 @@
-import type { Metadata } from "next";
-import { IBM_Plex_Sans } from "next/font/google";
-import { cn } from "@/lib/utils";
-import { ClerkProvider } from "@clerk/nextjs";
+// layout.tsx
 
-import "./globals.css";
+import './globals.css';
+import './css/style.css';
 
-const IBMPlex = IBM_Plex_Sans({ 
-  subsets: ["latin"],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-ibm-plex'
+import { Inter } from 'next/font/google';
+import Header from '@/components/ui/header';
+import Footer from '@/components/ui/footer'; // Import the Footer component
+import { ClerkProvider } from '@clerk/nextjs';
+import { metadata } from '@/config/metadata'; // Import metadata
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
 });
-
-export const metadata: Metadata = {
-  title: "Evvie.ai",
-  description: "AI-powered image generator",
-};
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <ClerkProvider appearance={{
-      variables: { colorPrimary: '#624cf5' }
-    }}>
+    <ClerkProvider appearance={{ variables: { colorPrimary: '#FB4570' } }}>
       <html lang="en">
-        <body className={cn("font-IBMPlex antialiased", IBMPlex.variable)}>
-          {children}
+        <body
+          className={`${inter.variable} font-inter antialiased bg-white text-gray-900 tracking-tight`}
+        >
+            <Header />
+            <main className="flex-grow">{children}</main>
+            <Footer /> 
         </body>
       </html>
     </ClerkProvider>

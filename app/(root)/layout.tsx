@@ -1,22 +1,32 @@
-import MobileNav from '@/components/shared/MobileNav'
-import Sidebar from '@/components/shared/Sidebar'
-import { Toaster } from '@/components/ui/toaster'
+"use client";
 
-const Layout = ({ children }: { children: React.ReactNode }) => {
+import { useEffect } from "react";
+import Header from "@/components/ui/header";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import Footer from "@/components/ui/footer";
+
+export default function DefaultLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      disable: "phone",
+      duration: 700,
+      easing: "ease-out-cubic",
+    });
+  }, []); // Added dependency array
+
   return (
     <main className="root">
-      <Sidebar />
-      <MobileNav />
-
-      <div className="root-container">
-        <div className="wrapper">
-          {children}
-        </div>
-      </div>
+      <Header />
+      <div className="root-container">{children}</div>
       
-      <Toaster />
     </main>
-  )
+  );
 }
-
-export default Layout

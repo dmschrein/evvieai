@@ -2,10 +2,10 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/**/*.{ts,tsx}',
   ],
   prefix: "",
   theme: {
@@ -14,6 +14,8 @@ module.exports = {
       padding: "2rem",
       screens: {
         "2xl": "1400px",
+        "3xl": "1680px",
+        "4xl": "2200px",
       },
     },
     extend: {
@@ -64,6 +66,26 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        green: {
+          50: '#30AF5B',
+          90: '#292C27',
+        },
+        gray: {
+          10: '#EEEEEE',
+          20: '#A2A2A2',
+          30: '#7B7B7B',
+          50: '#585858',
+          90: '#141414',
+        },
+        orange: {
+          50: '#FF814C',
+        },
+        blue: {
+          70: '#021639',
+        },
+        yellow: {
+          50: '#FEC601',
+        },
       },
       fontFamily: {
         IBMPlex: ["var(--font-ibm-plex)"],
@@ -71,11 +93,27 @@ module.exports = {
       backgroundImage: {
         "purple-gradient": "url('/assets/images/gradient-bg.svg')",
         banner: "url('/assets/images/banner-bg.png')",
+        'bg-img-1': "url('/assets/images/slider2.png')",
+        'bg-img-2': "url('/assets/images/slider1.png')",
+        'bg-img-3': "url('/assets/images/slider5.png')",
+        'bg-img-4': "url('/assets/images/slider6.png')",
+        'feature-bg': "url('/assets/images/feature-bg.png')",
+        pattern: "url('/assets/images/pattern.png')",
+        'pattern-2': "url('/assets/images/pattern-bg.png')",
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        '5xl': '40px',
+      },
+      screens: {
+        xs: '400px',
+        '3xl': '1680px',
+        '4xl': '2200px',
+      },
+      maxWidth: {
+        '10xl': '1512px',
       },
       keyframes: {
         "accordion-down": {
