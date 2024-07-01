@@ -70,14 +70,15 @@ export default function Hero() {
                 <div>
                   <Button
                     asChild
-                    className="button bg-purple-gradient bg-cover"
+                    size={"lg"}
+                    className="large-button bg-purple-gradient bg-cover"
                   >
                     <Link href="/sign-in">Start free trial</Link>
                   </Button>
 
                   {/* Learn more button - change to take user to about page*/}
                 </div>
-                <div>
+                {/* <div>
                   <Button
                     asChild
                     className="button text-purple bg-gray-200 hover:bg-yellow-300 ml-3 flex items-center px-4 py-2 rounded"
@@ -96,7 +97,7 @@ export default function Hero() {
                       </svg>
                     </Link>
                   </Button>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

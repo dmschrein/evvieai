@@ -20,13 +20,13 @@ export default function DefaultLayout({
       duration: 700,
       easing: "ease-out-cubic",
     });
-  });
+  }, []); // Added dependency array
 
   return (
     <main className="root">
       <Header />
       <div className="root-container">{children}</div>
+      
     </main>
-    // <Footer />
   );
 }

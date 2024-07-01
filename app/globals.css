@@ -223,6 +223,9 @@
     @apply py-4 px-6 flex-center gap-3 rounded-full p-16-semibold focus-visible:ring-offset-0 focus-visible:ring-transparent !important;
   }
 
+  .large-button {
+    @apply py-10 px-10 text-lg w-full sm:w-auto flex-center gap-3 rounded-full p-16-semibold focus-visible:ring-offset-0 focus-visible:ring-transparent !important;
+  }
   .dropdown-content {
     @apply shadow-lg rounded-md overflow-hidden p-0;
   }

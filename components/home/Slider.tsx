@@ -62,14 +62,14 @@ const Slider = () => {
       <div className="hide-scrollbar flex h-[340px] w-full items-start justify-start gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]">
         <SliderSlot 
           backgroundImage="bg-bg-img-1"
-          title="1. Stop Guessing, Start Growing"
+          title="Stop Guessing, Start Growing"
           subtitle="Our AI analyses your business and identifies where you should start your social growth journey"
           list={["Analyze your current social media presence", "Identify key growth opportunities", "Develop a targeted content strategy"]}
           peopleJoined="50+ Joined"
         />
         <SliderSlot 
           backgroundImage="bg-bg-img-2"
-          title="2. Maximize Your Impact"
+          title="Maximize Your Impact with AI"
           subtitle="Harness the power of AI to transform your social media strategy"
           list={["Start creating instantly", "Generate onbrand content", "Grow your community"]}
           peopleJoined="50+ Joined"
@@ -83,7 +83,7 @@ const Slider = () => {
         /> */}
          <SliderSlot 
           backgroundImage="bg-bg-img-4"
-          title="3. Transform Your Social Media Presence"
+          title="How You Can Transform Your Social Media Presence"
           subtitle="Leverage AI to connect, engage, and grow like never before"
           list={["Convert engagement into sales", "Find new customers", "Go viral"]}
           peopleJoined="50+ Joined"
@@ -96,7 +96,7 @@ const Slider = () => {
             <strong>Feeling Lost</strong> And Not Knowing The Way?
           </h2>
           <p className="regular-20 xl:regular-16 mt-5 text-white">
-            Starting from the anxiety of growing a business and creating content, branding, and social media management, the possibility of getting lost is very large. That's why we are here for those of you who have embarked on a startup adventure.
+            Read our blog! Starting from the anxiety of growing a business and creating content, branding, and social media management, the possibility of getting lost is very large. That's why we are here for those of you who have embarked on a startup adventure.
           </p>
           <Image 
             src="/assets/images/quote.svg"

@@ -1,3 +1,5 @@
+"use client";
+
 
 import EvvieLogo from "@/app/ui/evvie-logo"
 
